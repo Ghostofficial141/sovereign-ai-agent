@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Sovereign AI Agent</title>
     <style>
-        body { font-family: sans-serif; background: #111; color: #0f0; text-align: center; padding: 50px; }
-        .status { border: 1px solid #0f0; padding: 20px; display: inline-block; }
+        body { background: #000; color: #00ff41; font-family: 'Courier New', monospace; text-align: center; padding-top: 100px; }
+        .box { border: 1px solid #00ff41; display: inline-block; padding: 30px; box-shadow: 0 0 15px #00ff41; }
+        a { color: #fff; text-decoration: none; border: 1px solid #fff; padding: 10px; margin-top: 20px; display: inline-block; }
+        a:hover { background: #fff; color: #000; }
     </style>
 </head>
 <body>
-    <h1>Sovereign AI Agent System</h1>
-    <div class="status">
-        <p>Status: 🟢 ONLINE (Serverless)</p>
-        <p>Architecture: Python / Vercel Edge</p>
-        <p><a href="/api/cron" style="color: #fff;">[ Trigger Manual Audit ]</a></p>
+    <div class="box">
+        <h1>AGENT STATUS: ONLINE</h1>
+        <p>Deployment: Vercel Edge (Serverless)</p>
+        <p>Frequency: Daily Cron + On-Demand Audit</p>
+        <a href="/api/index">RUN MANUAL AUDIT (Trigger Discord)</a>
     </div>
 </body>
 </html>
